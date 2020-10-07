@@ -14,7 +14,8 @@ const Shop = () => {
         let count = 1;
         let newCart;
         if(sameProduct){
-            sameProduct.qauntity = sameProduct.quantity + 1;
+            count = sameProduct.quantity + 1;
+            sameProduct.qauntity = count;
             const others = cart.filter(pd => pd.key !== key);
             newCart = [...others, sameProduct];
         }

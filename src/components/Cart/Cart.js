@@ -15,8 +15,9 @@ import { Link } from 'react-router-dom';
     for(let i = 0; i< cart.length; i++){
         const product = cart[i];
         total = total + product.price * product.quantity;
-    }
+        console.log(product.quantity);
 
+    }
 
     // end
     let shipping = 0;
